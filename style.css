@@ -179,6 +179,7 @@ body {
 .vidpic {
     width: 130px;
     margin: 10px;
+    border-radius: 5px;
     position: relative;
 }
 
