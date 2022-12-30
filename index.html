@@ -12,46 +12,64 @@
     
     <div class="thebody">
 
-        <h2 class="search-identify">Results of "Faudiac"</h2>
+        <h2 class="search-identify"></h2>
 
         <a href="">
-            <button class="LinkHead">Faudiac</button>
+            <button class="LinkHead">Welcome to the Faudiac Web Browser!!</button>
         </a>
 
         <p class="Descriptions">
             Learn about the world from Faudibrowser. This is 
-            the worlds most safest web Browser ever. It has many features (Faadaka)... <a href="../Faudiac/Mobile servers/server1(Mob).html">Founder of Faudiac?</a>
+            the worlds most safest web Browser ever. It has many features (Faadaka)...</a>
         </p>
 
-        <a href="https://faudiac.github.io/OfficialFaudyNEWS/">
-            <button class="LinkHead">Faudy News</button>
+
+        <a href="search.html">
+            <button class="LinkHead">Let Your Curiosity Guide..</button>
         </a>
 
-        <p class="Descriptions">
-            Best commedy live news broadcasting with many features by the partner ship of 
-            Faudiax Productions.
-        </p>
+        <div class="game">
+            <div class="character"></div>
+            <div class="block"></div>
+        </div>
 
-        <a href="https://www.youtube.com/channel/UC13KjiIUCVGeKkhdHQIUcCQ">
-            <button class="LinkHead">Fauditube</button>
-        </a>
 
-        <p class="Descriptions">
-            Watch amazing and funny videos made by Faudiax Productions...
-        </p>
+    </div>
 
-            <div class="imges-box">
-                <div class="imghead">
-                    Images
-                </div>
+    <h2 class="h2count">countdown for 2023 from december 30th</h2>
 
-                <img src="images/pic1.png" alt="pic" class="img-pic">
-                <img src="images/pic2.png" alt="pic" class="img-pic">
-                <img src="images/pic3.png" alt="pic" class="img-pic">
+<p id="demo"></p>
 
-                <p class="note">looks like you've reached the end...</p>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("December 31, 2022 12:30:25").getTime();
 
-            </div>
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 
     </div>
 

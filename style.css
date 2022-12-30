@@ -259,3 +259,79 @@ body {
     0%{left: 480px;}
     100%{left:-40px;}
 }
+
+.img-pic {
+    width: 250px;
+    margin-left: 40px;
+    padding-bottom: 10px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.exp-img{
+    margin-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: none;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    width: auto;
+    height: auto;
+    background: rgb(35, 35, 35);
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  #demo{
+    color: green;
+    font-size: 50px;
+    font-family: monospace;
+  }
+
+  .h2count{
+    color: green;
+  }
