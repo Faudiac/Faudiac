@@ -13,7 +13,7 @@ function myFunction(imgs) {
 
 
 // Set the date we're counting down to
-var countDownDate = new Date("December 31, 2022 23:00:25").getTime();
+var countDownDate = new Date("January 1, 2023 00:00:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
