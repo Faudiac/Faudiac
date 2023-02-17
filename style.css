@@ -212,7 +212,7 @@ body {
 }
 
 #mySearch {
-    width: 95%;
+    width: 15%;
     margin-left: 5px;
     font-size: 18px;
     padding: 11px;
@@ -220,6 +220,14 @@ body {
     border: 3px solid orangered;
     background: black;
     color: orangered;
+    transition-duration: 500ms;
+    transition-delay: 20ms;
+  }
+
+  #mySearch:hover {
+    background: orangered;
+    color: black;
+    width: 95%;
   }
   
   /* Style the navigation menu */
@@ -233,6 +241,7 @@ body {
   /* Style the navigation links */
   #myMenu li a {
     padding: 12px;
+    float: left;
     text-decoration: none;
     color: rgb(255, 255, 255);
     display: block
