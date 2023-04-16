@@ -372,3 +372,9 @@ details {
     margin-top: 5px;
     background: orangered;
 }
+
+.st-search-container {
+    background: black;
+    border-radius: 50px;
+    
+}
