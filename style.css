@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Newsreader:opsz@6..72&display=swap');
 
 body {
     background: rgb(0, 0, 0);
@@ -227,7 +228,7 @@ body {
     width: 2px;
     height: 70%;
     border-radius: 50px;
-    background: rgb(46, 46, 46);
+    background: rgb(80, 80, 80);
 }
 
 .Search-butn {
@@ -235,11 +236,15 @@ body {
     color: orangered;
 }
 
+.Search-butn:hover {
+    color: white;
+}
+
 .di {
     margin: 2em auto;
     padding:4px;
     width: 90%;
-    height: 80%;
+    height: 36%;
     overflow-x: hidden;
     overflow-y: auto;
     text-align:justify;
@@ -403,4 +408,62 @@ details {
     color: greenyellow;
     font-style: italic;
     font-size: 20px;
+}
+
+.Dailynews {
+    width: 90%;
+    height: auto;
+    margin: 3em auto;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.067);
+}
+
+h3 {
+    color: rgb(7, 255, 7);
+    font-family: 'kenia', cursive;
+    font-size: 30px;
+    padding: 20px;
+    position: relative;
+}
+
+.line3 {
+    width: 90%;
+    height: 2px;
+    margin-left: 10px;
+    background-color: rgb(35, 35, 35);
+}
+
+.displaymainheadline {
+    width: 90%;
+    height: auto;
+    background: rgba(255, 255, 255, 0);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.displaymainheadline:hover {
+    background: rgba(255, 255, 255, 0.131);
+}
+
+.main-thum-news { 
+    width: 90%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.newstittle {
+    font-size: 25px;
+    color: orangered;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-bottom: px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.Eventposter {
+    width: 98.3%;
+    border-radius: 20px;
+    margin: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 #26909a, 0 6px 20px 0 rgb(0, 255, 229);
 }
