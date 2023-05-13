@@ -38,22 +38,7 @@
             <button class="select-butn" onclick="filterSelection('sport')">Sports</button>
             <button class="select-butn" onclick="filterSelection('nature')">Nature</button>
             <button class="select-butn" onclick="filterSelection('Works')">Works</button>
-    </div>
-
-    <div class="pop">
-        <h2 class="Aboutus">What is Image search?</h2>
-        <p class="Para1">
-            Image search is now availible by Faudiac browser, warning Faudiac search via image is still in its first 
-            stage. SO for now users cannot be able to search image from input by text but in the near future that feature will be 
-            added.
-        </p>
-    </div>
-
-    <div class="pop2">
-        <h2 class="Aboutus"> View Images</h2>
-        <p class="Para1">
-            Due to some issue's we are still working on the search input so that you can search images by text
-        </p>
+            <button class="select-butn" onclick="filterSelection('more')">more</button>
     </div>
     
     <div class="row">
@@ -163,15 +148,49 @@
             </div>
         </div>
 
+        <div class="column people">
+                <div class="content">
+                    <img src="images/pic11.avif" al="Warning" style="width:100%">
+                    <h4></h4>
+                    <p>A wonderful scenary</p>
+                    <a href="rickroll.html">
+                        <button  class="linkbutn" onclick="">Learn more about this picture.</button>
+                    </a>
+                </div>
+        </div>
+
     </div>
-
-    
-
       <!-- END GRID -->
-      </div>
+    </div>
       
       <!-- END MAIN -->
-      </div>
+    </div>
+
+    <div class="pop">
+        <h2 class="Aboutus">What is Image search?</h2>
+        <p class="Para1">
+            Image search is now availible by Faudiac browser, warning Faudiac search via image is still in its first 
+            stage. SO for now users cannot be able to search image from input by text but in the near future that feature will be 
+            added.
+        </p>
+    </div>
+
+    <div class="pop2">
+        <h2 class="Aboutus"> View Images</h2>
+        <p class="Para1">
+            Due to some issue's we are still working on the search input so that you can search images by text
+        </p>
+    </div>
+
+      <script>
+      function openVid() {
+        document.getElementById("myOverlay").style.display = "block";
+      }
+      
+      function closeVid() {
+        document.getElementById("myOverlay").style.display = "none";
+      }
+      </script>
 
       <script>
         filterSelection("all")

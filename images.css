@@ -271,3 +271,56 @@ body {
   border-radius: 10px;
   box-shadow: 5px 4px 8px #4d1714, 7px 8px 10px 0 rgb(86, 41, 41);
 }
+
+.linkbutn {
+    border: 0px;
+    font-size: 14px;
+    background: transparent;
+    color: white;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.close {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+  background: rgb(32, 32, 32);
+}
