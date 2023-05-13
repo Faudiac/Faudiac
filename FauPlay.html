@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaudiBrowser (Mobile)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="x-icon" href="./Faudiax.png">
+</head>
+
+<body>
+
+        <div class="vidcard-holder">
+            <p class="Vid-name">The greatest ever</p>
+                <video width="90%" height="60%" controls>
+                    <source src="images/The Greatest ever.mov" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                  <details>
+                    <p class="video-details">
+                        the first video on FauPlay
+                    </p>
+                    <p class="video-details">
+                        A rickroll ofcourse
+                    </p>
+                  </details>
+                  <p class="video-details">
+                    #1
+                </p>
+
+                    <a class="Next-butn" href="#section2">
+                        <ion-icon name="arrow-down-outline" size="large"></ion-icon>
+                    </a> 
+                    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        </div>
+        
+        <div class="vidcard2" id="section2">
+            <p class="Vid-name">Faudiax Logo</p>
+            <video width="90%" height="60%" controls>
+                <source src="images/Faudiax.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+              <details>
+                <p class="video-details">
+                    the first video on FauPlay
+                </p>
+                <p class="video-details">
+                    Video by <a href="https://www.youtube.com/@FaudiaxProductions">@Faudiax Production</a>
+                </p>
+              </details>
+              <p class="video-details">
+                #2
+            </p>
+        </div>
+
+    <style> 
+        button{
+      width: 3em;
+      height: 3em;
+      cursor: pointer;
+      outline: 5px;
+      color: #AAA;
+      margin-left: 15px;
+      margin-bottom: 5px;
+      border-radius: 50px;
+      border: 0px;
+    }
+    
+    .btn:focus {
+      outline: none;
+    }
+    
+    .green{
+      color: green;
+    }
+    
+    .red{
+      color: red;
+    }
+        </style>
+    
+        <script>
+            var btn1 = document.querySelector('#green');
+    var btn2 = document.querySelector('#red');
+    
+    btn1.addEventListener('click', function() {
+      
+        if (btn2.classList.contains('red')) {
+          btn2.classList.remove('red');
+        } 
+      this.classList.toggle('green');
+      
+    });
+    
+    btn2.addEventListener('click', function() {
+      
+        if (btn1.classList.contains('green')) {
+          btn1.classList.remove('green');
+        } 
+      this.classList.toggle('red');
+      
+    });
+        </script>
+
+    <div class="top-bar">
+
+        <a href="search.html">
+            <button class="Search-butnMobile">Search</button>
+        </a>
+
+        <h1 class="Mobile-mainhead">Faudiac-Player</h1>
+
+    </div>
+
+</body>
+
+</html>
