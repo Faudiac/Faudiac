@@ -7,9 +7,9 @@ body {
 }
 
 .thebody {
-    width: 99%;
+    width: 90%;
     height: auto;
-    margin-top: 5.5em;
+    margin: 6em auto;
     position: relative;
     background-color: black;
 }
@@ -126,7 +126,7 @@ body {
 }
 
 .imghead {
-    width: 90%;
+    width: 50%;
     height: 1.5em;
     margin: 15px;
     margin-top: 10px;
@@ -173,7 +173,7 @@ body {
 
 .line {
     width: 100%;
-    height: 4px;
+    height: 1px;
     margin-top: 10px;
     position: relative;
     background: rgb(29, 29, 29);
@@ -181,7 +181,7 @@ body {
 
 .line2 {
     width: 100%;
-    height: 3px;
+    height: 1px;
     margin-top: 5px;
     border-radius: 10px;
     background: rgb(152, 0, 0);
@@ -220,24 +220,33 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid orangered;
+    border: 1px solid orangered;
     border-radius: 50px;
+    
 }
 
 .lineverticle {
-    width: 2px;
+    width: 1px;
     height: 70%;
     border-radius: 50px;
     background: rgb(80, 80, 80);
 }
 
 .Search-butn {
+    width: 3em;
+    height: 3em;
+    color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+    background: transparent;
     margin-left: 5px;
     color: orangered;
 }
 
 .Search-butn:hover {
-    color: white;
+    background: rgba(255, 255, 255, 0.254);
 }
 
 .di {
@@ -336,7 +345,7 @@ body {
 
 /* The grid: Four equal columns that floats next to each other */
 .column {
-    float: none;
+    float: left;
     width: 25%;
     padding: 10px;
   }
@@ -428,7 +437,7 @@ h3 {
 
 .line3 {
     width: 90%;
-    height: 2px;
+    height: 1px;
     margin-left: 10px;
     background-color: rgb(35, 35, 35);
 }
@@ -467,3 +476,54 @@ h3 {
     position: relative;
     box-shadow: 0 4px 8px 0 #26909a, 0 6px 20px 0 rgb(0, 255, 229);
 }
+
+
+  /* The Close Button */
+  .close {
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    background: rgb(32, 32, 32);
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+  .Camera-butn{
+    width: 3em;
+    height: 3em;
+    color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: transparent;
+  }
+
+  .Camera-butn:hover {
+    background: rgba(255, 255, 255, 0.289);
+  }
+  

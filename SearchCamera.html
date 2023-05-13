@@ -1,0 +1,254 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaudiBrowser (Mobile)</title>
+    <link rel="stylesheet" href="images.css">
+    <link rel="shortcut icon" type="x-icon" href="./Faudiax.png">
+</head>
+
+<body>
+    
+    <div class="thebody">
+
+      <div class="search-container">
+
+        <input type="search" id="mySearch" onkeyup="myFunction()" placeholder="let your curiosity guide you" title="Type your search here" autocomplete="off">
+        
+        <div class="lineverticle"></div>
+
+        <a class="Search-butn" href="search.html">
+          <ion-icon name="search-outline" size="large"></ion-icon>
+        </a> 
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <a class="Camera-butn" href="SearchCamera.html">
+          <ion-icon name="camera-outline" size="large"></ion-icon>
+        </a> 
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+      </div>
+      
+      <div class="choseview" id="SeeWButn">
+            <button class="select-butn" onclick="filterSelection('all')">All</button>
+            <button class="select-butn" onclick="filterSelection('people')">People</button>
+            <button class="select-butn" onclick="filterSelection('sport')">Sports</button>
+            <button class="select-butn" onclick="filterSelection('nature')">Nature</button>
+            <button class="select-butn" onclick="filterSelection('Works')">Works</button>
+    </div>
+  
+    <div class="imges-box">
+        <div class="imghead">
+            Images
+        </div>
+
+        <p class="note">Due to some issue's we are still working on the search input so that you can search images by text</p>
+
+    </div>
+
+    <div class="row">
+        <div class="column nature">
+          <div class="content">
+            <img src="images/pic3.png" alt="Earth" style="width:100%">
+            <h4>Earth</h4>
+            <p>Faudiax Production Earth Model</p>
+          </div>
+        </div>
+        <div class="column nature">
+          <div class="content">
+          <img src="images/pic24.jpeg" alt="space" style="width:100%">
+            <h4>Space</h4>
+            <p> the observable Space </p>
+          </div>
+        </div>
+        <div class="column nature">
+          <div class="content">
+          <img src="images/pic25.jpeg" alt="Space" style="width:100%">
+            <h4>Space Black hole</h4>
+            <p>picture of a black hole</p>
+        </div>
+        
+        </div>
+        <div class="column nature">
+            <div class="content">
+            <img src="images/biopic1.png" alt="biology" style="width:100%">
+              <h4>Biology</h4>
+              <p>CGI.</p>
+            </div>
+          </div>
+        
+        <div class="column sports">
+          <div class="content">
+            <img src="images/pic5.png" alt="Chess" style="width:100%">
+            <h4>Chess</h4>
+            <p>pe4 , kings opening / <a href="https://www.chess.com/home">Chess.com</a></p>
+          </div>
+        </div>
+        <div class="column sports">
+          <div class="content">
+          <img src="images/pic4.webp" alt="Car" style="width:100%">
+            <h4>Chess</h4>
+            <p>Checkmate.</p>
+          </div>
+        </div>
+        <div class="column people">
+            <div class="content">
+              <img src="images/pic17.jpeg" alt="Ronaldo" style="width:100%">
+              <h4>Winston Churchill</h4>
+              <p>Peace sign</p>
+            </div>
+          </div>
+        <div class="column people, sport">
+          <div class="content">
+          <img src="images/s4pic4.png" alt="Messi" style="width:100%">
+            <h4>Messi</h4>
+            <p>Football Match Barcelona</p>
+          </div>
+        </div>
+      
+        <div class="column people, sport">
+          <div class="content">
+            <img src="images/pic7.jpeg" alt="Ronaldo" style="width:100%">
+            <h4>Ronaldo</h4>
+            <p>World Cup 2018</p>
+          </div>
+        </div>
+        <div class="column people, sport">
+          <div class="content">
+            <img src="images/pic44.png" alt="Ronaldo" style="width:100%">
+            <h4>Ronaldo</h4>
+            <p>ballon d'or</p>
+          </div>
+        </div>
+        <div class="column people">
+          <div class="content">
+          <img src="images/s4pic3.png" alt="Messi" style="width:100%">
+            <h4>Lionel Messi</h4>
+            <p>World Cup 2022</p>
+          </div>
+        </div>
+
+        <div class="column people">
+            <div class="content">
+              <img src="images/pic16.jpeg" alt="Albert Einestine" style="width:100%">
+              <h4>Albert Einestine</h4>
+              <p>Picture with black board</p>
+            </div>
+        </div>
+
+        <div class="column people, sport">
+            <div class="content">
+              <img src="images/pic60.webp" al="Pele'" style="width:100%">
+              <h4>Pele'</h4>
+              <p>Picture of pele'</p>
+            </div>
+        </div>
+
+        <div class="column Works, nature">
+            <div class="content">
+              <img src="images/pic23.jpeg" al="Solar System" style="width:100%">
+              <h4>Pele'</h4>
+              <p>Picture of pele'</p>
+            </div>
+        </div>
+
+    </div>
+
+      <!-- END GRID -->
+      </div>
+      
+      <!-- END MAIN -->
+      </div>
+
+      <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        
+        // Add active class to the current button (highlight it)
+        var SeeWButn = document.getElementById("SeeWButn");
+        var btns = SeeWButn.getElementsByClassName("select-btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+
+                <script>
+                    function myFunction() {
+                      // Declare variables
+                      var input, filter, div, img, a, div;
+                      input = document.getElementById("mySearch");
+                      filter = input.value.toUpperCase();
+                      div = document.getElementById("column");
+                      img = div.getElementsByTagName("img");
+                    
+                      // Loop through all list items, and hide those who don't match the search query
+                      for (i = 0; i < li.length; i++) {
+                        a = li[i].getElementsByTagName("a")[0];
+                        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                          li[i].style.display = "";
+                        } else {
+                          li[i].style.display = "none";
+                        }
+                      }
+                    }
+                </script>
+
+    <div class="top-bar">
+
+        <a href="search.html">
+            <button class="Search-butnMobile">Search</button>
+        </a>
+
+        <h1 class="Mobile-mainhead">Faudiac</h1>
+
+    </div>
+
+    <script type="text/javascript">
+      (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+      (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+      e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+      })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+      
+      _st('install','TsMZkp6Px5R4N1NP5-xr','2.0.0');
+    </script>
+
+</body>
+
+</html>
