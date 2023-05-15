@@ -106,8 +106,11 @@ body {
 }
 
 .Descriptions {
+    border: 0px solid rgb(57, 57, 57);
+    border-radius: 10px;
     color: orange;
     font-size: 17px;
+    margin: 10px;
 }
 
 .Descriptions2 {
@@ -126,7 +129,7 @@ body {
     height: auto;
     border-radius: 20px;
     position: relative;
-    background: rgb(59, 59, 59);
+    background: rgba(255, 255, 255, 0.051);
 }
 
 .imghead {
@@ -136,13 +139,13 @@ body {
     margin-top: 10px;
     position: relative;
     border-radius: 5px;
-    color: white;
+    color: orangered;
     font-size: 30px;
-    background: rgb(37, 36, 36);
+    background: transparent;
 }
 
 .note {
-    margin-left: 15px;
+    margin-left: 20px;
     padding-bottom: 10px;
     color: orangered;
 }
@@ -150,13 +153,14 @@ body {
 .choseview {
     width: 100%;
     height: 2em;
-    background: rgb(29, 29, 29);
+    background: rgba(255, 255, 255, 0.051);
     position: relative;
     border-radius: 50px;
 }
 
 .select-mode-1 {
-    margin: 5px;
+    width: 5em;
+    height: 2.5em;
     border-radius: 50px;
     border: 3px solid orangered;
     color: black;
@@ -164,10 +168,13 @@ body {
 }
 
 .select-mode-2 {
+    width: 5em;
+    height: 2.5em;
     border-radius: 50px;
-    border: 3px solid orangered;
+    border: 1px solid orangered;
     color: orangered;
     background: black;
+    transition-duration: 500ms;
 }
 
 .select-mode-2:hover {
@@ -208,9 +215,8 @@ body {
 }
 
 .Vid-Link {
-    font-size: 20px;
+    font-size: 15px;
     position: relative;
-    font-family: monospace;
     color: orange;
     border: 0px;
     background: black;
@@ -532,34 +538,34 @@ h3 {
   }
   
   .vidcard-holder {
-    width: 100%;
-    height: 90%;
-    background: rgba(255, 255, 255, 0.268);
-    margin-top: 5.5em;
-    right: 0px;
-    left: 0px;
+  width: 80%;
+  height: 90%;
+  background: rgba(255, 77, 0, 0.141);
+  margin: 5.5em auto;
+  right: 0px;
+  left: 0px;
+  border-radius: 10px;
 }
 
 .vidcard2 {
-  width: 100%;
+  width: 80%;
   height: 90%;
-  background: rgba(255, 255, 255, 0.268);
-  margin-top: 5.5em;
+  background: rgba(255, 77, 0, 0.141);
+  margin: 1em auto;
   right: 0px;
   left: 0px;
+  border-radius: 10px;
 }
 
 
 video {
     width: 100%;
-    border-radius: 10px;
 }
 
 .Vid-name {
-    font-size: 25px;
+    font-size: 30px;
     color: white;
-    margin: 15px;
-    margin-bottom: 0px;
+    padding: 10px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
