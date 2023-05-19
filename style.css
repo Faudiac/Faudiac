@@ -199,12 +199,17 @@ body {
 }
 
 .videobox {
-    width: 95%;
+    width: 100%;
     margin: 5px;
     height: 6em;
     background: black;
     display: flex;
     align-items: center;
+    border-radius: 10px;
+}
+
+.videobox:hover {
+    background: rgba(255, 255, 255, 0.178);
 }
 
 .vidpic {
@@ -217,9 +222,13 @@ body {
 .Vid-Link {
     font-size: 15px;
     position: relative;
-    color: orange;
+    color: rgb(255, 255, 255);
     border: 0px;
-    background: black;
+    background: rgba(0, 0, 0, 0);
+}
+
+.Vid-Link:hover {
+    color: orangered;
 }
 
 .search-container {

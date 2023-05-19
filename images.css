@@ -221,7 +221,7 @@ body {
     height: auto;
     border-radius: 20px;
     position: relative;
-    background: rgb(59, 59, 59);
+    background: rgba(255, 255, 255, 0.051);
 }
 
 .imghead {
@@ -231,9 +231,9 @@ body {
     margin-top: 10px;
     position: relative;
     border-radius: 5px;
-    color: white;
+    color: orangered;
     font-size: 30px;
-    background: rgb(37, 36, 36);
+    background: transparent;
 }
 
 .note {
@@ -323,4 +323,52 @@ body {
   text-decoration: none;
   cursor: pointer;
   background: rgb(32, 32, 32);
+}
+
+.select-mode-1 {
+  width: 5em;
+  height: 2.5em;
+  border-radius: 50px;
+  border: 3px solid orangered;
+  color: black;
+  background: orangered;
+}
+
+.select-mode-2 {
+  width: 5em;
+  height: 2.5em;
+  border-radius: 50px;
+  border: 1px solid orangered;
+  color: orangered;
+  background: black;
+  transition-duration: 500ms;
+}
+
+.select-mode-2:hover {
+  color: black;
+  background-color: orangered;
+}
+
+.Classlinks {
+  border-radius: 50px;
+  border: 0px;
+  height: 2em;
+  border-bottom-left-radius: 0px;
+  background: rgb(238, 102, 52);
+  color: white;
+}
+
+.gotoio {
+  height: 2em;
+  width: 2em;
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background: rgb(238, 102, 52);
 }
