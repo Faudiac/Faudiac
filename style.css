@@ -90,6 +90,7 @@ body {
 }
 
 .LinkHead {
+    margin-top: 10px;
     font-size: 30px;
     color: rgb(12, 176, 0);
     background: black;
@@ -100,7 +101,8 @@ body {
 .LinkHead2 {
     font-size: 30px;
     color: rgb(12, 176, 0);
-    background: orangered;
+    background: transparent;
+    margin-top: 10px;
     border: 0px;
     font-family: 'Kenia', cursive;
 }
@@ -114,7 +116,7 @@ body {
 }
 
 .Descriptions2 {
-    color: black;
+    color: rgb(255, 255, 255);
     margin-left: 10px;
     margin-bottom: 10px;
     font-size: 17px;
@@ -301,7 +303,7 @@ body {
     padding: 12px;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    border-radius: 50px;
+    border-radius: 20px;
     display: block
   }
   
@@ -354,6 +356,13 @@ body {
     padding-bottom: 10px;
     position: relative;
     border-radius: 20px;
+}
+
+.sample-pic {
+    width: 100px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .exp-img{
@@ -593,3 +602,49 @@ video {
 .Next-butn:hover {
     background: rgba(255, 255, 255, 0.234);
 }
+
+.timenote {
+    color: rgba(255, 68, 0, 0.852);
+    font-size: 13px;
+    
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #ff712f38;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ff00004e;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #f1f1f13e;
+    margin-bottom: 10px;
+  }
+
+  .view {
+    background: white;
+    color: orangered;
+    width: 8em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+  }

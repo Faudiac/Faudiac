@@ -40,7 +40,7 @@ body {
 }
 
 .selectdev:hover {
-    background: orangered;
+    background: rgba(255, 68, 0, 0.381);
 }
 
 .top-bar {
@@ -162,7 +162,7 @@ body {
   }
 
   .select-butn:active {
-    background: rgba(255, 68, 0, 0.303);
+    background: rgba(255, 68, 0, 0.331);
     color: white;
   }
 
@@ -198,7 +198,7 @@ body {
   
   /* Content */
   .content {
-    background-color: rgba(255, 255, 255, 0.195);
+    background-color: rgba(255, 0, 0, 0.17);
     padding: 10px;
     border-radius: 10px;
   }
@@ -221,7 +221,7 @@ body {
     height: auto;
     border-radius: 20px;
     position: relative;
-    background: rgba(255, 255, 255, 0.051);
+    background: rgba(255, 0, 0, 0.358);
 }
 
 .imghead {
