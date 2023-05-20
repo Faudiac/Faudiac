@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faudiac-cmds</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" type="x-icon" href="../Faudiax.png">
+
+</head>
+
+<body>
+    
+    <div class="thebody">
+
+        <div class="linkhead">Your Commands</div>
+
+        <h2 class="search-identify">Command for "Make me laugh"</h2>
+
+        <button onclick="typeWriter()" class="view">Click me</button>
+
+        <p id="TypeAuto" class="Texst"></p>
+
+        <button type="button" class="collapsible"> Enjoy </button>
+        <div class="content">
+            <div class="line2"></div>
+    
+            <p class="Descriptions2">
+                <video src="../images/The Greatest ever.mov" muted autoplay loop width="90%"></video>
+            </p>
+        </div>
+
+    </div>
+
+    <div class="top-bar">
+
+        <a href="../search.html">
+            <button class="Search-butnMobile">Search</button>
+        </a>
+
+        <h1 class="Mobile-mainhead">Faudiac</h1>
+
+    </div>
+
+    <script>
+        var i = 0;
+var txt = ' Never gonna give you Up, Never gonna let you down , Never gonna turn around and desert you..Never Gonna make you cry , Never gonna say Good bye never gonna tell a Lie or hurt you "get rickrolled"'; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("TypeAuto").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+    </script>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

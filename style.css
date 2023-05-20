@@ -648,3 +648,8 @@ video {
     align-items: center;
     border-radius: 50px;
   }
+
+  .Texst {
+    color: rgb(251, 255, 0);
+    font-size: 25px;
+  }
