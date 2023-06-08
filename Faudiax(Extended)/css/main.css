@@ -727,7 +727,7 @@ li {
     border-radius: .2em 0 0 .2em;
     -webkit-border-radius: .2em 0 0 .2em;
     margin-bottom: 0;
-    background-color: rgba(21, 21, 21, 0.70);
+    background-color: rgba(255, 85, 0, 0.7);
     z-index: 200;
 }
 
@@ -741,6 +741,8 @@ li {
     padding-right: 0;
     color: white;
     font-size: 1.5em;
+    border-radius: 50px;
+    background: rgba(255, 84, 5, 0);
 }
 
 #flexbox-input::-ms-clear {
