@@ -12,26 +12,22 @@
     
     <div class="thebody">
 
-      <div class="search-container">
+      <form autocomplete="off">
+        <div class="search-container">
+          <div class="autocomplete" style="width:95%;">
+            <input type="search" id="mySearch" onchange="openPage()" placeholder="let your curiosity guide you.." title="Type your search here">
+          </div>
+          <div class="lineverticle"></div>
+          <a class="Search-butn" href="#">
+            <ion-icon name="search-outline" size="large"></ion-icon>
+          </a> 
+          <a class="Camera-butn" href="SearchCamera.html">
+            <ion-icon name="camera-outline" size="large"></ion-icon>
+          </a>  
+        </div>
+      </form>
 
-        <input type="search" id="mySearch" onkeyup="myFunction()" placeholder="let your curiosity guide you" title="Type your search here" autocomplete="off">
-        
-        <div class="lineverticle"></div>
-
-        <a class="Search-butn" href="#">
-          <ion-icon name="search-outline" size="large"></ion-icon>
-        </a> 
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-        <a class="Camera-butn" href="SearchCamera.html">
-          <ion-icon name="camera-outline" size="large"></ion-icon>
-        </a> 
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-      </div>
-  
+      <script src="search.js"></script>
 
           <div class="di">
                 <ul id="myMenu">
@@ -105,41 +101,6 @@
                 <li><a href="">Who is the father of Astronomy</a></li>
                 <li><a href="https://www.youtube.com/">Youtube.com</a></li>
 
-                <div class="line"></div>
-                <li><a href="CommandFIles/Rickroll.html">@Faudiac& (Cmd; make me laugh)</a></li>
-                </ul>
-
-
-                <p class="note">Sorry your search wasn't found, the server or the file hasn't been made. try again later ...
-                  or search it on <a href="https://faudiac.github.io/faudibrowser/#gsc.tab=0">FaudiBrowser1</a>
-                </p>
-
-                <div class="game">
-                  <div class="character"></div>
-                  <div class="block"></div>
-                </div>
-
-            </div>
-                <script>
-                    function myFunction() {
-                      // Declare variables
-                      var input, filter, ul, li, a, i;
-                      input = document.getElementById("mySearch");
-                      filter = input.value.toUpperCase();
-                      ul = document.getElementById("myMenu");
-                      li = ul.getElementsByTagName("li");
-                    
-                      // Loop through all list items, and hide those who don't match the search query
-                      for (i = 0; i < li.length; i++) {
-                        a = li[i].getElementsByTagName("a")[0];
-                        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                          li[i].style.display = "";
-                        } else {
-                          li[i].style.display = "none";
-                        }
-                      }
-                    }
-                </script>
 
     <div class="top-bar">
 
@@ -151,15 +112,9 @@
 
     </div>
 
-    <script type="text/javascript">
-      (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-      (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-      e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-      })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-      
-      _st('install','TsMZkp6Px5R4N1NP5-xr','2.0.0');
-    </script>
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
 </body>
 
 </html>

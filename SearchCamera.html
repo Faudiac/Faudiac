@@ -12,25 +12,26 @@
     
     <div class="thebody">
 
-      <div class="search-container">
+      <form autocomplete="off">
+        <div class="search-container">
+          <div class="autocomplete" style="width:95%;">
+            <input type="search" id="mySearch" onchange="openPage()" placeholder="let your curiosity guide you.." title="Type your search here">
+          </div>
+          <div class="lineverticle"></div>
+          <a class="Search-butn" href="search.html">
+            <ion-icon name="search-outline" size="large"></ion-icon>
+          </a> 
+          <a class="Camera-butn" href="SearchCamera.html">
+            <ion-icon name="camera-outline" size="large"></ion-icon>
+          </a>  
+        </div>
+      </form>
 
-        <input type="search" id="mySearch" onkeyup="myFunction()" placeholder="let your curiosity guide you" title="Type your search here" autocomplete="off">
-        
-        <div class="lineverticle"></div>
+      <script src="search.js"></script>
+      
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-        <a class="Search-butn" href="search.html">
-          <ion-icon name="search-outline" size="large"></ion-icon>
-        </a> 
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-        <a class="Camera-butn" href="SearchCamera.html">
-          <ion-icon name="camera-outline" size="large"></ion-icon>
-        </a> 
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-      </div>
       
       <div class="choseview" id="SeeWButn">
             <button class="select-butn" onclick="filterSelection('all')">All</button>
