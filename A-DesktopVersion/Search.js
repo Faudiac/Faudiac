@@ -9,6 +9,15 @@ function openPage() {
         window.open("arts.html");
     }
 
+    if (x === "Faudiax") {
+      window.open("https://faudiac.github.io/Faudiax/");
+    }
+
+    if (x === "Faudynews") {
+      window.open("https://faudiac.github.io/OfficialFaudyNEWS/");
+    }
+
+
     if (x === "Services ads") {
         window.open("services/ads .html");
     }
