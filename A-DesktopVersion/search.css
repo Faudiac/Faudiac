@@ -1,5 +1,4 @@
 body {
-    background: white;
 }
 
 .body {
@@ -64,6 +63,18 @@ h4:hover {
     width: 99%;
     height: 3em;
     background: transparent;
+    color: orangered;
+}
+
+#mySearch::-webkit-search-cancel-button{
+    position:relative;
+    right:20px;  
+
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius:10px;
+    background: red;
 }
 
 /*the container must be positioned relative:*/
@@ -74,7 +85,6 @@ h4:hover {
   
   .autocomplete-items {
     position: absolute;
-    border: 1px solid #d4d4d4;
     border-bottom: none;
     border-top: none;
     z-index: 99;
@@ -88,6 +98,8 @@ h4:hover {
     padding: 10px;
     cursor: pointer;
     background-color: #fff; 
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     border-bottom: 1px solid #d4d4d4; 
   }
   
@@ -526,3 +538,8 @@ div.desc {
     margin-left: 20px;
     background: rgb(108, 108, 108);
 }
+
+.Slogo {
+    width: 50px;
+}
+

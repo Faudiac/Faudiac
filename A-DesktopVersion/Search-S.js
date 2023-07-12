@@ -9,8 +9,8 @@ function openPage() {
         window.open("../arts.html");
     }
 
-    if (x === "Services ads") {
-        window.open("services/ads .html");
+    if (x === "Faudiax") {
+        window.open("../Server1/Server1.html");
     }
 
     if (x === "Ronaldo") {

@@ -43,7 +43,11 @@ function openPage() {
   
   if (x === "Faudynews") {
     window.open("Search Results/R=FaudyNEWS.html");
- }
+  }
+
+  if (x === "Faudiax") {
+    window.open("Search Results/R=FaudyNEWS.html");
+  }
 
 }
 

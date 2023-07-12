@@ -721,3 +721,7 @@ video {
     background-color: rgb(255, 71, 30) !important; 
     color: #ffffff;
   }
+
+  .Slogo {
+    width: 50px;
+  }
