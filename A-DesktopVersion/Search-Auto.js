@@ -1,43 +1,3 @@
-function openPage() {
-  var x = document.getElementById("mySearch").value;
-
-  if (x === "Home") {
-    window.open("index.html");
-  }
-
-  if (x === "Albert Einestine") {
-    window.open("./servesbackup/server8.html");
-  }
-
-  if (x === "Algebra") {
-    window.open("./servesbackup/server7.html");
-  }
-
-    if (x === "Biology") {
-    window.open("./server6/server6.html");
-  }
-
-  if (x === "Ronaldo") {
-     window.open("server3/Server3.html");
-  }
-
-  if (x === "Cristiano Ronaldo") {
-    window.open("server3/Server3.html");
-  }
-  
-  if (x === "Faudynews") {
-    window.open("https://faudiac.github.io/OfficialFaudyNEWS/");
-  }
-
-  if (x === "Faudiax") {
-    window.open("https://faudiac.github.io/Faudiax/");
-  }
-
-  else {
-    alert("Sorry Your Search is not Availible try searching something else!." )
-  }
-
-}
 
 function autocomplete(inp, arr) {
     /*the autocomplete function takes two arguments,
@@ -137,19 +97,52 @@ function autocomplete(inp, arr) {
   }
   
   /*An array containing all the country names in the world:*/
-    var countries = [
- 
-       "Albert Einestine","Algebra","Algebra","Biology","bruh", "bruhmeme","bruhmemegang","brumeme","Bunnies on Sale!! (Recent News)",
-       "chess", "Cristiano Ronaldo", "Ronaldo", "Chessboard.fau","donkey","dog", "Elephant","Faudy News.fau", "Faudiax", "FauHathim", "Fauditube.fau",
-       "FaudiBrowser1.fau", "Faudiac", "FauPlay", "Founder of Faudiax", "Faudiac (Test build)", "How to win a game of chess?", "How to Play chess?"
-       , "How to do Algebra?", "Lioenel Messi", "Messi", "Leo Messi", "Pele'", "PSG VS AL NASR", "Space", "Winston Churchill","what is Cristiano Ronaldo's Networth?",
-        "what is Cristiano Ronaldo's Religion?", "What is Space?", "Surah Fathiha / fauhathim", "Surah Mulk / fauhathim", "Surah Ikhlas / fauhathim", "Surah falaq / fauhathim"
-        ,"Surah Nas/ fauhathim", "What is Pele's Nationality?", "What is Biology?", "What is Messi's Networth?", "What is Messi's Religion?", "When was Algebra invented?", 
-        "When was Astronomy invented?", "Who made Algebra?", "Who is Albert Einestine?", "Who is the father of Biology?", "who is the goat of chess?", "Who is Ronaldo?", "Who is Messi?",
-        "Who is Pele'?", "Who is sir Winston Churchill?", "Who is the father of Astronomy", "Youtube.com", "@Faudiac& (Cmd; make me laugh)",
-    ];
-  
+  var countries = [ 
+
+    "Home", "Demo news", "Services ads" ,"Art works", 
+
+    /* People Biographies */
+
+    "Albert Einestine",
+
+    "Ronaldo", "Cristiano Ronaldo","CR7","what is Cristiano Ronaldo's Networth?",
+    "what is Cristiano Ronaldo's Religion?",
+
+    "Lioenel Messi", "Messi", "Leo Messi","What is Messi's Networth?", "What is Messi's Religion?",
+
+    "Pele'",
+
+
+    /* Studying */
+
+    "Algebra","Biology","Space",
+
+
+    /* Meme's */
+
+    "bruh", "bruhmeme","bruhmemegang","brumeme",
+
+
+    /* Sports */
+
+    "chess", "Chessboard.fau", "How to win a game of chess?", "How to Play chess?",
+    
+    /* Animals */
+
+    "donkey","dog", "Elephant",
+
+    /* Faudiax */
+    
+    "Faudynews", "Faudiax", "FauHathim", "Fauditube",
+    "FaudiBrowser1.fau", "Faudiac", "FauPlay", "Founder of Faudiax",
+    
+    "How to do Algebra?", 
+    
+        , "PSG VS AL NASR",  "Winston Churchill", "What is Space?", "Surah Fathiha / fauhathim", "Surah Mulk / fauhathim", "Surah Ikhlas / fauhathim", "Surah falaq / fauhathim"
+     ,"Surah Nas/ fauhathim", "What is Pele's Nationality?", "What is Biology?",  "When was Algebra invented?", 
+     "When was Astronomy invented?", "Who made Algebra?", "Who is Albert Einestine?", "Who is the father of Biology?", "who is the goat of chess?", "Who is Ronaldo?", "Who is Messi?",
+     "Who is Pele'?", "Who is sir Winston Churchill?", "Who is the father of Astronomy", "Youtube.com", "@Faudiac& (Cmd; make me laugh)",
+    
+    ]
   /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
   autocomplete(document.getElementById("mySearch"), countries);
- 
- 

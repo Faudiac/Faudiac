@@ -1,4 +1,5 @@
 body {
+    background: white;
 }
 
 .body {
@@ -64,6 +65,23 @@ h4:hover {
     height: 3em;
     background: transparent;
     color: orangered;
+}
+
+.Search-butn {
+    color: rgba(0, 0, 0, 0.953);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    height: 3em;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    background: rgba(86, 86, 86, 0.435);
+}
+
+.Search-butn:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(255, 98, 0);
 }
 
 #mySearch::-webkit-search-cancel-button{
