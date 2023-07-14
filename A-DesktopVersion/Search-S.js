@@ -17,14 +17,12 @@ function openPage() {
       window.open("https://faudiac.github.io/OfficialFaudyNEWS/");
     }
 
-    if (x === "CR7") {
-      window.open("Server 3/Server3.html");
+    if (x ==="Ronaldo", "Cristiano Ronaldo","CR7","what is Cristiano Ronaldo's Networth?","what is Cristiano Ronaldo's Religion?") {
+      window.open("../Server 3/Server3.html");
     }
-    if (x === "Ronaldo") {
-        window.open("Server 3/Server3.html");
-    }
-    if (x === "Cristiano Ronaldo") {
-      window.open("Server 3/Server3.html");
+ 
+    if (x === "Lionel Messi", "Messi", "Leo Messi","What is Messi's Networth?", "What is Messi's Religion?") {
+      window.open("../Server5/Server5.html");
     }
 
     else {

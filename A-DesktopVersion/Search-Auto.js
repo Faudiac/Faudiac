@@ -108,7 +108,7 @@ function autocomplete(inp, arr) {
     "Ronaldo", "Cristiano Ronaldo","CR7","what is Cristiano Ronaldo's Networth?",
     "what is Cristiano Ronaldo's Religion?",
 
-    "Lioenel Messi", "Messi", "Leo Messi","What is Messi's Networth?", "What is Messi's Religion?",
+    "Lionel Messi", "Messi", "Leo Messi","What is Messi's Networth?", "What is Messi's Religion?",
 
     "Pele'",
 
