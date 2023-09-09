@@ -14,6 +14,15 @@ body {
     background-color: black;
 }
 
+
+.body {
+  width: 90%;
+  height: auto;
+  margin: 13em auto;
+  position: relative;
+  background-color: black;
+}
+
 .chosedevice {
     width: 15em;
     height: 15em;
@@ -43,15 +52,17 @@ body {
     background: rgba(255, 68, 0, 0.381);
 }
 
+
 .top-bar {
-    width: 100%;
-    height: 5em;
-    right: 0px;
-    left: 0px;
-    top: 0px;
-    background: orange;
-    position: fixed;
+  width: 100%;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.185);
+  background: rgb(0, 0, 0);
+  position: fixed;
 }
+
 
 .Search-butnMobile {
     font-family: 'Kenia', cursive;
@@ -117,10 +128,13 @@ body {
 }
 
 .Mobile-mainhead {
-    font-family: 'Kenia', cursive;
-    font-size: 40px;
-    margin-left: 10px;
-    color: orangered;
+  font-family: 'Kenia', cursive;
+  font-size: 40px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: center;
+  color: orangered;
 }
 
 .search-identify { 
@@ -437,4 +451,51 @@ input[type=search] {
 .autocomplete-active {
   background-color: rgb(255, 71, 30) !important; 
   color: #ffffff;
+}
+
+.chose {
+  width: 100%;
+  height: 3em;
+  margin: 0.5em auto;
+  border: 1px solid white;
+  border-radius: 50px;
+  background: rgba(255, 123, 35, 0);
+  color: white;
+}
+
+.chose:hover {
+  height: 3.5em ;
+  background: white;
+  color: black;
+}
+
+.infoPFP {
+  width: 5em;
+  height: 5em;
+  border: 1px solid rgba(255, 255, 255, 0);
+  right: 5px;
+  position: fixed;
+  top: 5px;
+  border-radius: 50px;
+  background-color: #bbbbbb28;
+}
+
+.opennav {
+  width: 5em;
+  height: 5em;
+  top: 5px;
+  left: 5px;
+  color: white;
+  background: rgb(0, 0, 0);
+  border: 0px;
+  position: fixed;
+  border-radius: 50px;
+}
+
+.opennav:hover {
+  background: rgba(255, 102, 46, 0.797);
+}
+
+.Slogo {
+  width: 50px;
 }

@@ -11,14 +11,20 @@ body {
 }
 
 .thebody {
-    width: 90%;
-    height: auto;
-    margin: 6em auto;
-    position: relative;
-    background-color: black;
+  width: 90%;
+  height: auto;
+  margin: 3em auto;
+  position: relative;
+  background-color: black;
 }
 
-
+.body {
+  width: 90%;
+  height: auto;
+  margin: 13em auto;
+  position: relative;
+  background-color: black;
+}
 
 .chosedevice {
     width: 15em;
@@ -51,11 +57,11 @@ body {
 
 .top-bar {
     width: 100%;
-    height: 5em;
     right: 0px;
     left: 0px;
     top: 0px;
-    background: orange;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.185);
+    background: rgb(0, 0, 0);
     position: fixed;
 }
 
@@ -76,10 +82,13 @@ body {
 }
 
 .Mobile-mainhead {
-    font-family: 'Kenia', cursive;
-    font-size: 40px;
-    margin-left: 10px;
-    color: orangered;
+  font-family: 'Kenia', cursive;
+  font-size: 40px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: center;
+  color: orangered;
 }
 
 .search-identify { 
@@ -111,7 +120,7 @@ body {
 .Descriptions {
     border: 0px solid rgb(57, 57, 57);
     border-radius: 10px;
-    color: orange;
+    color: rgb(255, 255, 255);
     font-size: 17px;
     margin: 10px;
 }
@@ -425,13 +434,13 @@ body {
   }
 
   #demo{
-    color: green;
-    font-size: 50px;
-    font-family: monospace;
+    color: rgb(251, 255, 0);
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 
   .h2count{
-    color: green;
+    color: rgba(255, 255, 255, 0.632);
   }
 
 details {
@@ -725,3 +734,94 @@ video {
   .Slogo {
     width: 50px;
   }
+
+.chose {
+  width: 100%;
+  height: 3em;
+  margin: 0.5em auto;
+  border: 1px solid white;
+  border-radius: 50px;
+  background: rgba(255, 123, 35, 0);
+  color: white;
+}
+
+.chose:hover {
+  height: 3.5em ;
+  background: white;
+  color: black;
+}
+
+.infoPFP {
+  width: 5em;
+  height: 5em;
+  border: 1px solid rgba(255, 255, 255, 0);
+  right: 5px;
+  position: fixed;
+  top: 5px;
+  border-radius: 50px;
+  background-color: #bbbbbb28;
+}
+
+.opennav {
+  width: 5em;
+  height: 5em;
+  top: 5px;
+  left: 5px;
+  color: white;
+  background: rgb(0, 0, 0);
+  border: 0px;
+  position: fixed;
+  border-radius: 50px;
+}
+
+.opennav:hover {
+  background: rgba(255, 102, 46, 0.797);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.PFP {
+  width: 5em;
+  height: 5em;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 50px;
+  margin-left: 10px;
+  background-color: #bbbbbb28;
+}

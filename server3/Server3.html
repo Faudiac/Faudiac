@@ -11,17 +11,7 @@
 
 <body>
     
-    <div class="thebody">
-
-        <form autocomplete="off" action="">
-            <div class="autocomplete" style="width:300px;">
-              <input id="myInput" type="search" name="myCountry" placeholder="Let your curiosity guide you">
-            </div>
-
-            <a href="../search.html">
-                <button class="searchbth" href="../search.html"><i class="fa-solid fa-magnifying-glass" href="../search.html"></i></button>
-            </a>
-        </form>
+    <div class="body">
 
         <div class="choseview">
             
@@ -206,19 +196,45 @@
 
     </div>
 
-    <div class="top-bar">
-
-        <a href="../search.html">
-            <button class="Search-butnMobile">Search</button>
-        </a>
-
-        <h1 class="Mobile-mainhead">Faudiac</h1>
-
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
     </div>
 
-    <script src="../script.js"></script>
+    <div class="top-bar">
+
+        <button class="opennav" onclick="openNav()"> ☰ </button> 
+    
+        <h1 class="Mobile-mainhead">Faudiac</h1>
+    
+        <button class="infoPFP"><img src="../Faudiax.png" alt="logo" width="99%"></button>
+    
+        <form autocomplete="off">
+          <div class="search-container">
+            <img src="../Faudiax.png" alt="logo" class="Slogo">
+            <div class="autocomplete" style="width:95%;">
+              <input type="search" id="mySearch" onchange="openPage()" placeholder="let your curiosity guide you.." title="Type your search here">
+            </div>
+            <div class="lineverticle"></div>
+            <a class="Search-butn" href="#">
+              <ion-icon name="search-outline" size="large"></ion-icon>
+            </a> 
+            <a class="Camera-butn" href="SearchCamera.html">
+              <ion-icon name="camera-outline" size="large"></ion-icon>
+            </a>  
+          </div>
+        </form>
+      </div>
+
+    <script src="../js/script.js"></script>
 
     <script src="../search.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

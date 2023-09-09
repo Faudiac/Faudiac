@@ -12,18 +12,7 @@
 
 <body>
     
-    <div class="thebody">
-
-        <form autocomplete="off" action="">
-            <div class="autocomplete" style="width:300px;">
-              <input id="myInput" type="search" name="myCountry" placeholder="Let your curiosity guide you">
-            </div>
-
-            <a href="../search.html">
-                <button class="searchbth" href="../search.html"><i class="fa-solid fa-magnifying-glass" href="../search.html"></i></button>
-            </a>
-        </form>
-
+    <div class="body">
 
         <div class="choseview">
             
@@ -113,13 +102,28 @@
 
     <div class="top-bar">
 
-        <a href="../search.html">
-            <button class="Search-butnMobile">Search</button>
-        </a>
-
+        <button class="opennav" onclick="openNav()"> ☰ </button> 
+    
         <h1 class="Mobile-mainhead">Faudiac</h1>
-
-    </div>
+    
+        <button class="infoPFP"><img src="../Faudiax.png" alt="logo" width="99%"></button>
+    
+        <form autocomplete="off">
+          <div class="search-container">
+            <img src="../Faudiax.png" alt="logo" class="Slogo">
+            <div class="autocomplete" style="width:95%;">
+              <input type="search" id="mySearch" onchange="openPage()" placeholder="let your curiosity guide you.." title="Type your search here">
+            </div>
+            <div class="lineverticle"></div>
+            <a class="Search-butn" href="#">
+              <ion-icon name="search-outline" size="large"></ion-icon>
+            </a> 
+            <a class="Camera-butn" href="SearchCamera.html">
+              <ion-icon name="camera-outline" size="large"></ion-icon>
+            </a>  
+          </div>
+        </form>
+      </div>
 
     <script src="../search.js"></script>
 

@@ -10,22 +10,7 @@
 
 <body>
     
-    <div class="thebody">
-
-      <form autocomplete="off">
-        <div class="search-container">
-          <div class="autocomplete" style="width:95%;">
-            <input type="search" id="mySearch" onchange="openPage()" placeholder="let your curiosity guide you.." title="Type your search here">
-          </div>
-          <div class="lineverticle"></div>
-          <a class="Search-butn" href="search.html">
-            <ion-icon name="search-outline" size="large"></ion-icon>
-          </a> 
-          <a class="Camera-butn" href="SearchCamera.html">
-            <ion-icon name="camera-outline" size="large"></ion-icon>
-          </a>  
-        </div>
-      </form>
+    <div class="body">
 
       <script src="search.js"></script>
       
@@ -206,6 +191,7 @@
         </p>
     </div>
 
+
       <script>
       function openVid() {
         document.getElementById("myOverlay").style.display = "block";
@@ -283,15 +269,40 @@
                     }
                 </script>
 
-    <div class="top-bar">
+  <script src="js/script.js"></script>
 
-        <a href="search.html">
-            <button class="Search-butnMobile">Search</button>
-        </a>
+  <div class="top-bar">
 
-        <h1 class="Mobile-mainhead">Faudiac</h1>
+    <button class="opennav" onclick="openNav()"> ☰ </button> 
 
-    </div>
+    <h1 class="Mobile-mainhead">Faudiac</h1>
+
+    <button class="infoPFP"><img src="Faudiax.png" alt="logo" width="99%"></button>
+
+    <form autocomplete="off">
+      <div class="search-container">
+        <img src="Faudiax.png" alt="logo" class="Slogo">
+        <div class="autocomplete" style="width:95%;">
+          <input type="search" id="mySearch" onchange="openPage()" placeholder="let your curiosity guide you.." title="Type your search here">
+        </div>
+        <div class="lineverticle"></div>
+        <a class="Search-butn" href="#">
+          <ion-icon name="search-outline" size="large"></ion-icon>
+        </a> 
+        <a class="Camera-butn" href="SearchCamera.html">
+          <ion-icon name="camera-outline" size="large"></ion-icon>
+        </a>  
+      </div>
+    </form>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="../index.html">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
 
     <script type="text/javascript">
       (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
